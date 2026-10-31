@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Estate | Property Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="brand">
+            <span class="brand-icon">⌂</span>
+            <div>
+                <h2>Community Estate</h2>
+                <p>Find a place to belong</p>
+            </div>
+        </div>
+        <span class="nav-label">SMART PROPERTY DISCOVERY</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">SMARTER PROPERTY DECISIONS</span>
+            <h1>Find a place that<br><span>fits your life.</span></h1>
+            <p>
+                Discover suitable properties based on your budget,
+                location, amenities and community preferences.
+            </p>
+        </section>
+
+        <section class="search-layout">
+
+            <div class="search-panel">
+                <div class="section-heading">
+                    <div>
+                        <span class="step-label">PERSONALIZE YOUR SEARCH</span>
+                        <h2>Your preferences</h2>
+                    </div>
+                    <span class="edit-icon">⌕</span>
+                </div>
+
+                <form id="searchForm">
+
+                    <div class="form-group">
+                        <label for="budget">Monthly budget (₹)</label>
+                        <input
+                            type="number"
+                            id="budget"
+                            placeholder="e.g. 9000"
+                            min="1"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distance">
+                            Maximum distance (km)
+                        </label>
+                        <input
+                            type="number"
+                            id="distance"
+                            placeholder="e.g. 2"
+                            min="0.1"
+                            step="0.1"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred amenities</label>
+                        <div class="amenities">
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="Food">
+                                <span>Food</span>
+                            </label>
+
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="WiFi">
+                                <span>Wi-Fi</span>
+                            </label>
+
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="CCTV">
+                                <span>CCTV</span>
+                            </label>
+
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="Parking">
+                                <span>Parking</span>
+                            </label>
+
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="Security">
+                                <span>Security</span>
+                            </label>
+
+                            <label class="amenity">
+                                <input type="checkbox" name="amenity" value="Lift">
+                                <span>Lift</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="transport-option">
+                        <input type="checkbox" id="transport">
+                        <span>
+                            <strong>Transport availability required</strong>
+                            <small>Show only properties with transport access</small>
+                        </span>
+                    </label>
+
+                    <button type="submit" id="searchButton">
+                        Find suitable properties <span>→</span>
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="results-panel">
+                <div class="results-heading">
+                    <div>
+                        <span class="step-label">YOUR MATCHES</span>
+                        <h2>Recommended properties</h2>
+                    </div>
+                    <span id="resultCount" class="result-count">0 results</span>
+                </div>
+
+                <div id="message" class="message">
+                    <div class="empty-icon">⌂</div>
+                    <h3>Your next home starts here</h3>
+                    <p>
+                        Enter your preferences and discover
+                        properties matched to your needs.
+                    </p>
+                </div>
+
+                <div id="results" class="results-list"></div>
+            </div>
+
+        </section>
+
+        <section class="method-section">
+            <span class="step-label">OUR RECOMMENDATION METHOD</span>
+            <h2>More than just a property search</h2>
+            <div class="factor-grid">
+                <div class="factor">
+                    <strong>30%</strong>
+                    <span>Budget</span>
+                </div>
+                <div class="factor">
+                    <strong>25%</strong>
+                    <span>Location</span>
+                </div>
+                <div class="factor">
+                    <strong>20%</strong>
+                    <span>Amenities</span>
+                </div>
+                <div class="factor">
+                    <strong>15%</strong>
+                    <span>Transport</span>
+                </div>
+                <div class="factor">
+                    <strong>10%</strong>
+                    <span>Community</span>
+                </div>
+            </div>
+            <p class="method-note">
+                Recommendations are ranked using a weighted suitability
+                scoring method. Verification status is displayed separately.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Community Estate · Smart Real Estate Decision Support</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
