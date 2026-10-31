@@ -1,0 +1,9 @@
+id,name,category,location,rent,distance,amenities,transport,community_score,verification_status
+1,Green Nest PG,Student,Bangalore,8500,1.2,Food;WiFi;CCTV,Yes,85,Verified
+2,City Comfort PG,Student,Bangalore,7000,3.5,WiFi;CCTV,Yes,75,Pending
+3,Student Home PG,Student,Bangalore,8800,0.8,Food;WiFi;CCTV,Yes,90,Verified
+4,Sunrise PG,Student,Bangalore,8000,2.0,Food;CCTV,No,80,Pending
+5,Campus Stay PG,Student,Bangalore,9000,1.5,Food;WiFi,Yes,88,Pending
+6,Green Valley Apartment,Residential,Bangalore,15000,2.5,Parking;WiFi;Security,Yes,82,Pending
+7,Urban Living Flat,Residential,Bangalore,18000,1.8,Lift;Parking;Security,Yes,87,Verified
+8,City Business Hub,Commercial,Bangalore,25000,4.0,Parking;Security,Yes,78,Pending
